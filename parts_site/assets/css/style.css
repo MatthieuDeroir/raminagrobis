@@ -1,0 +1,442 @@
+:root {
+    --color-header-onscroll: #F7F7F7;
+
+    --primary-scroll: #2e2e39;
+    --secondary-scroll: #746f6c;
+
+    /* Variables spéciales */
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-scroll);
+    border-radius: 33px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--secondary-scroll);
+    border-radius: 33px;
+}
+
+body::-webkit-scrollbar {
+    border-radius: 50px;
+    width: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    max-height: 8vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    background-color: rgba(32, 32, 32, 0.904);
+    color: rgb(139, 137, 137);
+    transition: all 0.6s ease-in-out;
+}
+
+.anim-header {
+    background: rgba(65, 65, 65, 0.904);
+    color: var(--color-header-onscroll);
+    text-decoration: none;
+    border-bottom: solid 1px var(--color-header-onscroll);
+}
+
+.div-title-logo {
+    display: flex;
+    align-items: center;
+}
+
+.fa-cat {
+    font-size: 4rem;
+    color: rgb(143, 143, 143);
+}
+
+.title {
+    text-decoration: underline;
+    transition: all 0.6s ease-in-out;
+}
+
+.title_on_scroll {
+    color: var(--color-header-onscroll);
+}
+
+.nav-header {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.list-header {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.link-list-header {
+    color: rgb(139, 137, 137);
+    text-decoration: underline;
+    transition: all 0.6s ease-out;
+}
+
+.link-list-header:hover {
+    color: var(--color-header-onscroll);
+}
+
+.link-underline-deleted {
+    color: var(--color-header-onscroll);
+    text-decoration: none;
+}
+
+.link-underline-deleted:hover {
+    color: black;
+    text-decoration: underline;
+}
+/* ------------ Background Image ------------ */
+
+.background-image {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-image: url("../image/background/background-lp.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 9vh 0 0 0;
+}
+
+/* ------------ Formulaire-connexion ------------ */
+
+.grey-overlay {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    position: fixed;
+    background-color: rgba(65, 62, 62, 0.774);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-form-connexion {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.border-formulaire-connexion {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    background-color: rgba(182, 182, 182, 0.493);
+}
+
+.form-title {
+    border-bottom: solid 3px black;
+}
+
+.form-title-usr{
+    border-bottom: solid 3px black;
+    text-align: center;
+}
+
+.form-desc-usr{
+    text-align: center;
+    background-color: #dddddd99;
+    margin: auto;
+    border-collapse: collapse;
+    padding: 0 250px 0 250px;
+}
+
+.form-connexion {
+    height: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-input-label {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    font-size: 1.5rem;
+}
+
+.div-input-label input {
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+.btn-submit {
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    box-shadow: -1px -1px 2px;
+    transition: all ease-in 0.5s;
+}
+
+.btn-submit:hover {
+    box-shadow: -2px -2px 2px;
+    color: #FFF;
+    border: solid #FFF 1px;
+    background-color: #343232;
+}
+
+/* ------------ Sections ------------ */
+
+.section-lp {
+    min-height: 450px;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    border-right: none;
+    border-left: none;
+    padding: 10px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(124, 124, 124, 0.247);
+
+}
+
+.container-card {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.card {
+    min-height: 75%;
+    max-width: 40%;
+    padding: 0 20px;
+    font-size: 1.3rem;
+    border: solid black 1px;
+    background-color: rgba(95, 90, 90, 0.37);
+    border-radius: 15px;
+}
+
+.padding-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.card-title {
+    text-align: center;
+    color: #101014;
+    border-bottom: solid black 2px;
+    padding-top: 0;
+}
+
+.card-para {
+    font-size: 1.1rem;
+    margin: 0;
+    text-align: center;
+}
+
+.link-btn {
+    margin: 17px;
+    text-decoration: none;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 5px 7px;
+    box-shadow: -1px -1px 2px;
+    transition: all ease-in 1s;
+}
+
+.link-btn:hover {
+    box-shadow: -2px -2px 2px;
+    color: #FFF;
+    border: solid #FFF 1px;
+    background-color: #343232;
+}
+
+.hidden {
+    display: none;
+} 
+
+/* -------- Cards Event -------- */
+
+.event-section {
+    background-color: rgba(218,218,218,0.4);
+}
+
+
+.container-section-event {
+    background-color: rgba(110, 110, 110, 0.774);
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
+.container-section-activity-sector {
+    background-color: rgba(150, 150, 150, 0.774);
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+.container-card-event {
+    width: 19%;
+    padding: 20px 40px;
+}
+
+.card-event {
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 40vh;
+    width: auto;
+}
+
+.card-event h3 {
+    border-bottom: solid 1px black;
+    width: 100%;
+    text-align: center;
+}
+
+.image-selected {
+    max-height: 70%;
+    margin: 0 16px;
+}
+
+.card-event p {
+    padding: 0 10px;
+    text-align: justify;
+    overflow-y: auto;
+    max-height: 30vh;
+    margin: 0%;
+}
+
+.card-event p::-webkit-scrollbar-thumb {
+    background-color: var(--primary-scroll);
+    border-radius: 33px;
+}
+
+
+.card-event p::-webkit-scrollbar-track {
+    background-color: var(--secondary-scroll);
+    border-radius: 33px;
+}
+
+.card-event p::-webkit-scrollbar {
+    border-radius: 50px;
+    width: 7px;
+}
+
+/* -------- Formulaire Creation -------- */
+
+.formulaire-creation {
+    background-color: rgba(218,218,218,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100wh;
+    min-height: 70vh;
+}
+
+.formulaire-creation .div-input-label {
+    width: 40%;
+}
+
+.formulaire-creation .div-input-label input {
+    border: solid 2px rgba(28, 26, 145, 0.664);
+}
+
+.formulaire-creation .div-input-label:first-child input {
+    border: none;
+}
+
+.formulaire-creation:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire-creation textarea {
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    border: solid 2px rgba(28, 26, 145, 0.664);
+
+}
+
+.title-creation-form {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline rgb(48, 46, 46);
+    color: rgba(28, 26, 145, 0.664);
+}
+
+/* --------- Table style -------- */
+
+#table_resp{
+    overflow-x:auto;
+}
+#subscribers {
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#subscribers td, #subscribers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#subscribers tr:nth-child(even){background-color: darkgrey;}
+
+#subscribers tr:nth-child(odd){background-color: grey;}
+
+#subscribers tr:hover {background-color:dimgrey;}
+
+#subscribers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
